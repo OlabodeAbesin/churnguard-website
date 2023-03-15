@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
       </Head>
       <ColorModeScript />
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
 
       <Providers>
         {/* <Modals /> */}
