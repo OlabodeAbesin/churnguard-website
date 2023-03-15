@@ -29,7 +29,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           <Partners />
           <BasicSection imageUrl="/churnguard-giffy.gif" title="Automation that emails you every time a payment fails." overTitle="Automated notifications">
             <p>
-            Our state-of-the-art system sends you an instant email notification whenever a customer payment fails, giving you the information you need to take action and get back on track. No more wasted time chasing down payments or wondering what went wrong with your service, you'll always be in the know.{' '}
+            Our state-of-the-art system sends you an instant email notification whenever a customer payment fails, giving you the information you need to take action and get back on track. No more wasted time chasing down payments or wondering what went wrong with your service, you will always be in the know.{' '}
               <Link href="/help-center">One-click install,</Link> setup in 10 seconds
             </p>
           </BasicSection>
