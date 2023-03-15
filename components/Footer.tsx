@@ -21,27 +21,27 @@ const footerItems: FooterItems = [
     title: 'Product',
     items: [
       { title: 'Features', href: '/features' },
-      { title: 'Something', href: '/something' },
-      { title: 'Something else', href: '/something-else' },
-      { title: 'And something else', href: '/and-something-else' },
+      // { title: 'Something', href: '/something' },
+      // { title: 'Something else', href: '/something-else' },
+      // { title: 'And something else', href: '/and-something-else' },
     ],
   },
   {
     title: 'Knowledge',
     items: [
-      { title: 'Blog', href: '/blog' },
+      //{ title: 'Blog', href: '/blog' },
       { title: 'Contact', href: '/contact' },
       { title: 'FAQ', href: '/faq' },
       { title: 'Help Center', href: '/help-center' },
     ],
   },
   {
-    title: 'Something',
+    title: '',
     items: [
-      { title: 'Features2', href: '/features2' },
-      { title: 'Something2', href: '/something2' },
-      { title: 'Something else2', href: '/something-else2' },
-      { title: 'And something else2', href: '/and-something-else2' },
+      //{ title: 'Features2', href: '/features2' },
+      // { title: 'Something2', href: '/something2' },
+      // { title: 'Something else2', href: '/something-else2' },
+      // { title: 'And something else2', href: '/and-something-else2' },
     ],
   },
 ];
@@ -58,24 +58,24 @@ export default function Footer() {
         <BottomBar>
           <ShareBar>
             <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
-              <a>
-                <TwitterIcon size={50} round={true} />
-              </a>
+
+              <TwitterIcon size={50} round={true} />
+
             </NextLink>
 
             <NextLink href="https://www.facebook.com/my-saas-startup" passHref>
-              <a>
-                <FacebookIcon size={50} round={true} />
-              </a>
+
+              <FacebookIcon size={50} round={true} />
+
             </NextLink>
 
             <NextLink href="https://www.linkedin.com/my-saas-startup" passHref>
-              <a>
-                <LinkedinIcon size={50} round={true} />
-              </a>
+
+              <LinkedinIcon size={50} round={true} />
+
             </NextLink>
           </ShareBar>
-          <Copyright>&copy; Copyright 2021 My Saas Startup</Copyright>
+          <Copyright>&copy; Copyright 2023 Churnguard</Copyright>
         </BottomBar>
       </Container>
     </FooterWrapper>
@@ -97,7 +97,7 @@ function ListItem({ title, href }: SingleFooterListItem) {
   return (
     <ListItemWrapper>
       <NextLink href={href} passHref>
-        <a>{title}</a>
+        {title}
       </NextLink>
     </ListItemWrapper>
   );

@@ -19,24 +19,21 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
       <Head>
         <title>{EnvVars.SITE_NAME}</title>
         <meta
-          name="description"
-          content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
+          name="Churnguard"
+          content="Are you tired of losing revenue due to failed payments and outdated reminder processes? Churnguard helps you say goodbye to lost revenue and hello to a reliable cash flow with our failed payment reminder service. Try us out today and see the difference for yourself. Let us handle the failed payments so you can focus on growing your business."
         />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          <BasicSection imageUrl="/churnguard-giffy.gif" title="Automation that emails you every time a payment fails." overTitle="Automated notifications">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+            Our state-of-the-art system sends you an instant email notification whenever a customer payment fails, giving you the information you need to take action and get back on track. No more wasted time chasing down payments or wondering what went wrong with your service, you'll always be in the know.{' '}
+              <Link href="/help-center">One-click install,</Link> setup in 10 seconds
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          {/* <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
               <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
@@ -46,14 +43,14 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li>Professional remark 2</li>
               <li>Professional feature 3</li>
             </ul>
-          </BasicSection>
+          </BasicSection> */}
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
-          <Cta />
-          <FeaturesGallery />
-          <Features />
-          <Testimonials />
-          <ScrollableBlogPosts posts={posts} />
+          {/* <Cta /> */}
+          {/* <FeaturesGallery /> */}
+          {/* <Features /> */}
+          {/* <Testimonials /> */}
+          {/* <ScrollableBlogPosts posts={posts} /> */}
         </DarkerBackgroundContainer>
       </HomepageWrapper>
     </>
