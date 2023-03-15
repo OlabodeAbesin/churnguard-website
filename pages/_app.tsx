@@ -46,10 +46,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
       </Head>
       <ColorModeScript />
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
 
       <Providers>
-        <Modals />
+        {/* <Modals /> */}
         <Navbar items={navItems} />
         <TinaEditProvider
           editMode={
@@ -83,12 +83,12 @@ function Providers<T>({ children }: PropsWithChildren<T>) {
   );
 }
 
-function Modals() {
-  const { isModalOpened, setIsModalOpened } = useNewsletterModalContext();
-  if (!isModalOpened) {
-    return null;
-  }
-  return <NewsletterModal onClose={() => setIsModalOpened(false)} />;
-}
+// function Modals() {
+//   const { isModalOpened, setIsModalOpened } = useNewsletterModalContext();
+//   if (!isModalOpened) {
+//     return null;
+//   }
+//   return <NewsletterModal onClose={() => setIsModalOpened(false)} />;
+// }
 
 export default MyApp;
