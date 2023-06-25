@@ -21,7 +21,7 @@ export default function Hero() {
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
-            Install Stripe Plugin <span>&rarr;</span>
+            Open App <span>&rarr;</span>
           </Button>
           {/* <NextLink href="#whitepaper" passHref legacyBehavior>
             <Button transparent>
