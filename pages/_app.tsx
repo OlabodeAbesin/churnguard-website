@@ -34,16 +34,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        {/* <link rel="alternate" type="application/rss+xml" href={EnvVars.URL + 'rss'} title="RSS 2.0" /> */}
-        {/* <script
+        <link rel="icon" type="image/png" href="./../favicon.png" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLMVSX5Y9X"></script>
+        <script
           dangerouslySetInnerHTML={{
-            __html: `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'UA-117119829-1', 'auto');
-          ga('send', 'pageview');`,
+            __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);
+          gtag('js', new Date());
+          gtag('config', 'G-FLMVSX5Y9X');`
           }}
-        /> */}
-        {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
+        ></script>
       </Head>
       <ColorModeScript />
       <GlobalStyle />
@@ -82,13 +82,5 @@ function Providers<T>({ children }: PropsWithChildren<T>) {
     </NewsletterModalContextProvider>
   );
 }
-
-// function Modals() {
-//   const { isModalOpened, setIsModalOpened } = useNewsletterModalContext();
-//   if (!isModalOpened) {
-//     return null;
-//   }
-//   return <NewsletterModal onClose={() => setIsModalOpened(false)} />;
-// }
 
 export default MyApp;

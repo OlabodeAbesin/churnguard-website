@@ -20,10 +20,15 @@ export default function Hero() {
         Are you tired of losing revenue due to failed payments and outdated reminder processes? We email you with details anytime customer payments fail so you can easily follow up.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
+          {/* <Button onClick={() => setIsModalOpened(true)}>
             Open App <span>&rarr;</span>
+          </Button> */}
+
+          <Button href="https://marketplace.stripe.com/apps/churnguard">
+            Open Stripe App<span>&rarr;</span>
           </Button>
-          {/* <NextLink href="#whitepaper" passHref legacyBehavior>
+{/*           
+          <NextLink href="#whitepaper" passHref legacyBehavior>
             <Button transparent>
               Features <span>&rarr;</span>
             </Button>
